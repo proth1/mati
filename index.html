@@ -25,6 +25,35 @@ Hello Mati!!!
       metadata='{"user_id":"9999999"}'
     />
 
+    <script type="text/javascript">
+        window.doorbellOptions = {
+            hideEmail: true, // Optional, hides the email address field
+            email: "proth@velocityz.com", // Optional, prepopulate the email address field
+            name: 'Paul Roth', // Optional, the name of the user
+            tags: 'tag1,tag2', // Optional, tags to add to this thread. Can be an array as well: ['tag1', 'tag2']
+            hideButton: false, // Optional, hides the button that doorbell adds to the bottom right of the page
+            container: document.getElementById('feedback-container'), // Optional, make the form render inline instead of as a modal
+            language: 'en', // Optional, if you know the language of the page or the user. You can then translate the form, the response messages, and the autoreply
+            properties: { // Optional, a Javascript object of custom properties you want to set
+                loggedIn: true,
+                username: 'testapp',
+                loginCount: 11,
+                roles: ["admin", "editor"], // Arrays are fine
+                contactDetails: { // Nested objects are allowed too
+                    phone: "1234567890",
+                    address: "Address line 1, Country"
+                }
+            },
+            id: 'YOUR-ID-GOES-HERE',
+            appKey: 'YOUR-API-KEY-GOES-HERE'
+        };
+    </script>
+
+
+
+
+
+
     <!-- Start of velocityz Zendesk Widget script
             <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=7d849dd7-ed7d-40bd-b1e9-814a3850f21d"> </script> 
          End of velocityz Zendesk Widget script -->
